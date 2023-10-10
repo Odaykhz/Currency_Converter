@@ -92,7 +92,7 @@ class CurrencyConverterNotifier extends ChangeNotifier {
         // Get the current date in "dd/mm/yyyy" format
         final currentDate = DateTime.now();
         formattedDate =
-            "${currentDate.day.toString().padLeft(2, '0')}/${currentDate.month.toString().padLeft(2, '0')}/${currentDate.year}";
+            '${currentDate.day.toString().padLeft(2, '0')}/${currentDate.month.toString().padLeft(2, '0')}/${currentDate.year}';
 
         final newConversion = CurrencyConversion(
           toCurrency: toCurrency,
