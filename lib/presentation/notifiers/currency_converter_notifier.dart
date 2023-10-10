@@ -63,7 +63,7 @@ class CurrencyConverterNotifier extends ChangeNotifier {
   final List<CurrencyConversion> conversionList = [];
 
   Future<void> convertCurrencyResult() async {
-    var box = await Hive.openBox<CurrencyConversion>('conversions_history');
+    final box = await Hive.openBox<CurrencyConversion>('conversions_history');
     isPressed = true;
     final currencyData = GetCurrencyData();
 
